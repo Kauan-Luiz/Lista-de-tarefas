@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">g
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+
+    <header>
+        <input type="text" id="input-tarefa" placeholder="Digite sua tarefa" >
+        <button class="add" id="btn-add" onclick="addTarefa()"> Adicionar</button>
+    </header>
+
+    <main id="areaLista">
+        <div class="item">
+            <div class="item-icone">
+                <span class="mdi mdi-circle-outline"></span>
+            </div>
+            <div class="item-nome">
+                Teste de tarefa
+            </div>
+            <div class="item-botao">
+                <button class="delete"> <i class="mdi mdi-delete">Deletar</i></button>
+            </div>
+        </div>
+
+        <div class="item-clicado">
+            <div class="item-icone">
+                <span class="mdi mdi-check-circle"></span>
+            </div>
+            <div class="item-nome">
+                Teste de tarefa
+            </div>
+            <div class="item-botao">
+                <button class="delete"> <i class="mdi mdi-delete">Deletar</i></button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="JS/controle.js"></script>
+</body>
+</html>
